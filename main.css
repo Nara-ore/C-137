@@ -6,7 +6,7 @@
 
 body {
     background: linear-gradient(135deg, #0a0f0f 0%, #1a2a2a 100%);
-    color: #b3fffc;
+    color: #9933ff;
     font-family: "Space Mono", monospace;
 }
 
@@ -22,8 +22,8 @@ form button {
 header {
     padding: 16px 0;
     background-color: #0d1f1f;
-    border-bottom: 3px solid #00ffcc;
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    border-bottom: 3px solid #9933ff;
+    box-shadow: 0 0 20px #ff44aa;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -31,7 +31,7 @@ header {
 
 header h1 {
     font-size: 24px;
-    text-shadow: 0 0 10px #00ffcc;
+    text-shadow: 0 0 10px #ff44aa, 0 0 20px #ff44aa;
 }
 
 header nav li {
@@ -40,7 +40,7 @@ header nav li {
 }
 
 header nav li a {
-    color: #ff66aa;
+    color: #b0ff00;
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s;
@@ -49,9 +49,9 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: #00ffcc;
-    border-bottom-color: #ff66aa;
-    text-shadow: 0 0 8px #ff66aa;
+    color: #ff44aa;
+    border-bottom-color: #b0ff00;
+    text-shadow: 0 0 8px #ff44aa, 0 0 15px #ff44aa;
 }
 
 .container {
@@ -71,22 +71,23 @@ section .container {
 
 section {
     padding: 60px 0;
-    border-bottom: 1px dashed #00ffcc;
+    border-bottom: 1px dashed #9933ff;
 }
 
 section h2 {
     margin-bottom: 30px;
-    color: #ff66aa;
+    color: #b0ff00;
     font-size: 32px;
-    text-shadow: 0 0 15px rgba(255, 102, 170, 0.5);
-    border-left: 5px solid #00ffcc;
+    text-shadow: 0 0 15px #ff44aa, 0 0 30px #ff44aa;
+    border-left: 5px solid #9933ff;
     padding-left: 20px;
 }
 
 section h3 {
-    color: #00ffcc;
+    color: #9933ff;
     margin-bottom: 20px;
     font-size: 20px;
+    text-shadow: 0 0 8px #ff44aa;
 }
 
 section p {
@@ -94,15 +95,21 @@ section p {
     line-height: 1.6;
     color: #d0ffff;
     font-size: 16px;
+    text-shadow: 0 0 5px #ff44aa;
 }
 
 .rick-image, .prime-image {
     max-width: 400px;
     width: 100%;
     border-radius: 10px;
-    border: 3px solid #ff66aa;
-    box-shadow: 0 0 30px rgba(255, 102, 170, 0.3);
+    border: 3px solid #b0ff00;
+    box-shadow: 0 0 30px #ff44aa, 0 0 60px #ff44aa;
     margin-right: 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+.rick-image:hover, .prime-image:hover {
+    box-shadow: 0 0 40px #ff44aa, 0 0 80px #ff44aa;
 }
 
 .prime-image {
@@ -122,14 +129,20 @@ section p {
 .quotes-list li {
     padding: 15px;
     background: rgba(0, 255, 204, 0.1);
-    border-left: 4px solid #ff66aa;
+    border-left: 4px solid #b0ff00;
     margin-bottom: 10px;
     font-style: italic;
-    color: #ff66aa;
+    color: #b0ff00;
+    box-shadow: 0 0 15px #ff44aa;
+    transition: box-shadow 0.3s ease;
+}
+
+.quotes-list li:hover {
+    box-shadow: 0 0 25px #ff44aa;
 }
 
 #prime {
-    background: rgba(255, 102, 170, 0.05);
+    background: rgba(255, 68, 170, 0.05);
 }
 
 .decline-cards {
@@ -146,13 +159,15 @@ section p {
     background: rgba(0, 30, 30, 0.7);
     padding: 25px;
     border-radius: 15px;
-    border: 2px solid #00ffcc;
-    transition: transform 0.3s;
+    border: 2px solid #9933ff;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px #ff44aa;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 30px rgba(0, 255, 204, 0.2);
+    box-shadow: 0 0 40px #ff44aa, 0 0 60px #ff44aa;
+    border-color: #ff44aa;
 }
 
 .card img {
@@ -161,17 +176,25 @@ section p {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
-    border: 2px solid #ff66aa;
+    border: 2px solid #b0ff00;
+    box-shadow: 0 0 15px #ff44aa;
+    transition: box-shadow 0.3s ease;
+}
+
+.card img:hover {
+    box-shadow: 0 0 30px #ff44aa;
 }
 
 .card h3 {
-    color: #ff66aa;
+    color: #b0ff00;
     margin-bottom: 15px;
+    text-shadow: 0 0 10px #ff44aa;
 }
 
 .card p {
     font-size: 14px;
     margin-bottom: 0;
+    text-shadow: 0 0 5px #ff44aa;
 }
 
 #contact .container {
@@ -198,17 +221,18 @@ form button {
     margin-bottom: 15px;
     padding: 12px;
     background: rgba(0, 40, 40, 0.8);
-    border: 2px solid #00ffcc;
-    color: #00ffcc;
+    border: 2px solid #9933ff;
+    color: #9933ff;
     font-family: "Space Mono", monospace;
     border-radius: 5px;
+    transition: all 0.3s;
 }
 
 form input:focus,
 form textarea:focus {
     outline: none;
-    border-color: #ff66aa;
-    box-shadow: 0 0 15px rgba(255, 102, 170, 0.3);
+    border-color: #b0ff00;
+    box-shadow: 0 0 20px #ff44aa, 0 0 40px #ff44aa;
 }
 
 form textarea {
@@ -217,18 +241,19 @@ form textarea {
 }
 
 form button {
-    background: #ff66aa;
+    background: #b0ff00;
     color: #0a0f0f;
     font-weight: bold;
     cursor: pointer;
     border: none;
     font-size: 16px;
     transition: all 0.3s;
+    box-shadow: 0 0 15px #ff44aa;
 }
 
 form button:hover {
-    background: #00ffcc;
-    box-shadow: 0 0 20px #00ffcc;
+    background: #9933ff;
+    box-shadow: 0 0 30px #ff44aa, 0 0 60px #ff44aa;
     transform: scale(1.02);
 }
 
@@ -244,32 +269,39 @@ form button:hover {
     width: 48px;
     filter: invert(1) hue-rotate(180deg);
     transition: all 0.3s;
+    box-shadow: 0 0 15px #ff44aa;
+    border-radius: 50%;
 }
 
 .social-links img:hover {
     transform: scale(1.2);
     filter: invert(0.7) hue-rotate(0deg);
+    box-shadow: 0 0 30px #ff44aa, 0 0 50px #ff44aa;
 }
 
 .warning {
-    color: #ff66aa;
+    color: #b0ff00;
     font-size: 14px;
     padding: 20px;
-    border: 2px dashed #ff66aa;
-    background: rgba(255, 102, 170, 0.1);
+    border: 2px dashed #b0ff00;
+    background: rgba(255, 68, 170, 0.1);
     max-width: 400px;
+    box-shadow: 0 0 20px #ff44aa;
+    text-shadow: 0 0 5px #ff44aa;
 }
 
 footer {
     background: #0d1f1f;
     padding: 30px 0;
     text-align: center;
-    border-top: 3px solid #ff66aa;
+    border-top: 3px solid #b0ff00;
+    box-shadow: 0 -5px 20px #ff44aa;
 }
 
 footer p {
-    color: #b3fffc;
+    color: #9933ff;
     font-size: 14px;
+    text-shadow: 0 0 8px #ff44aa;
 }
 
 @media (max-width: 768px) {
